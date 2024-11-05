@@ -1,14 +1,14 @@
 // Listado 10.3
 // Sobrecarga de constructores
-#inelude <iostream>
+#include <iostream>
 using namespace std;  // para cout
 
-class Rectángulo
+class Rectangulo
 {
 public:
 Rectangulo ();
 Rectangulo ( int ancho, int longitud );
-~Rectángulo() {}
+~Rectangulo() {}
 int ObtenerAncho() const
 { return suAncho; }
 int ObtenerLongitud () const
@@ -30,19 +30,20 @@ suLongitud = longitud;
 }
 int main()
 {
-Rectángulo Rectl ;
-cout « "Ancho de Rectl:
-cout « Rectl.ObtenerAncho() << endl;
-cout « "Longitud de Rectl:
-cout « Rectl.ObtenerLongitud() << endl;
+Rectangulo Rectl ;
+cout << "Ancho de Rectl: ";
+cout << Rectl.ObtenerAncho() << endl;
+cout << "Longitud de Rectl: ";
+cout << Rectl.ObtenerLongitud() << endl;
 int unAncho, unaLongitud;
-cout « "Escriba un ancho: ";
-cin » unAncho;
-cout « "\nEscriba una longitud: " ;
-cin » unaLongitud;
-Rectángulo Rect2(unAncho, unaLongitud);
-cout « "\nAncho de Rect2: “;
-cout « Rect2.0btenerAncho() << endl;
-cout « "Longitud de Rect2: ";
-cout « Rect2.0btenerLongitud( ) « endl;
+cout << "Escriba un ancho: ";
+cin >> unAncho;
+cout << "\nEscriba una longitud: " ;
+cin >> unaLongitud;
+Rectangulo Rect2(unAncho, unaLongitud);
+cout << "\nAncho de Rect2: ";
+cout << Rect2.ObtenerAncho() << endl;
+cout << "Longitud de Rect2: ";
+cout << Rect2.ObtenerLongitud( ) << endl;
 return 0;
+}
